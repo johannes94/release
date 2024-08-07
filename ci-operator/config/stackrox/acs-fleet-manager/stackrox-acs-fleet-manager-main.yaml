@@ -47,6 +47,7 @@ resources:
 test_binary_build_commands: echo 'Placeholder for building test-bin image'
 tests:
 - as: e2e
+  postsubmit: true
   steps:
     env:
       OCP_VERSION: ocp/fast-4.14
